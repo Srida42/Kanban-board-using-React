@@ -3,6 +3,7 @@ export type Priority = 'low' | 'medium' | 'high'
 export type Task = {
   title: string,
   id: string,
+  _id?: string,
   status: Status,
   priority: Priority,
   points?: number
