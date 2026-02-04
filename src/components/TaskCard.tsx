@@ -65,6 +65,12 @@ const TaskCard = ({task, updateTask, deleteTask}: {
     return 'Medium'
   }
 
+  // Display short ID for MongoDB ObjectId
+  const displayId = () => {
+    // MongoDB ObjectId is 24 chars, show last 6 for brevity
+    return task.id ? task.id.slice(-6) : 'N/A'
+  }
+
   return (
     <div
       draggable
@@ -97,9 +103,12 @@ const TaskCard = ({task, updateTask, deleteTask}: {
       {/* Bottom section */}
       <div className="flex justify-between items-center pt-3 text-gray-700 text-base border-t-2">
         <div className="flex items-center gap-3">
-          {/* Task ID */}
-          <div className="font-mono text-sm bg-gray-100 px-3 py-1.5 rounded-lg border">
-            {task.id.split('-').pop()}
+          {/* Task ID - showing short version */}
+          <div 
+            className="font-mono text-sm bg-gray-100 px-3 py-1.5 rounded-lg border cursor-help"
+            title={`Full ID: ${task.id}`}
+          >
+            #{displayId()}
           </div>
           
           {/* Priority Selector Button */}
