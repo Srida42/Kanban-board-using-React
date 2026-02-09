@@ -4,27 +4,27 @@
       "id": "BUS-3",
       "title": "Proj ideas",
       "status": "in-progress",
-      "priority": "high",
-      "points": 8
+      "priority": "medium",
+      "points": 7
     },
     {
       "id": "BUS-4",
       "title": "Identify potential partners",
-      "status": "done",
-      "priority": "high",
+      "status": "in-progress",
+      "priority": "medium",
       "points": 5
     },
     {
       "id": "BUS-5",
       "title": "Negotiate partnerships",
-      "status": "in-progress",
+      "status": "todo",
       "priority": "low",
       "points": 5
     },
     {
       "id": "BUS-8",
       "title": "Evaluate business performance",
-      "status": "done",
+      "status": "todo",
       "priority": "low",
       "points": 5
     },
@@ -32,7 +32,7 @@
       "id": "TASK-9",
       "title": "finish hw",
       "status": "todo",
-      "priority": "medium",
+      "priority": "high",
       "points": 8
     },
     {
